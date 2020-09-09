@@ -9,3 +9,14 @@ div#titleScreenStartButton {
     border-width: 1px;
     width: 250px;
 }
+
+div#titleScreen {
+	width: 50%;
+	border-color: white;
+	border-style: solid;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}

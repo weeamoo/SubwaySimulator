@@ -13,6 +13,7 @@ div#titleScreenStartButton {
 
 div#titleScreen {
 	width: 50%;
+	height: 50%;
 	border-color: white;
 	border-style: solid;
 	position: absolute;

@@ -15,4 +15,6 @@ td#debugGridLevelTd {
 
 img#debugGridLevelImg {
 	display: block;
+	height: 100%;
+	width: 100%;
 }

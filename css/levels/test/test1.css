@@ -1,1 +1,16 @@
+table#debugGridLevelTable {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	border: none;
+	margin: 0;
+	padding: 0;
+	border-width: 0px;
+}
 
+td#debugGridLevelTd {
+	padding: 0px;
+}
+
+img#debugGridLevelImg {
+	display: block;
+}

@@ -5,10 +5,11 @@ h1#titleScreenH1 {
 }
 
 div#titleScreenStartButton {
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    width: 250px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	width: 250px;
+	padding: 15px;
 }
 
 div#titleScreen {
@@ -33,4 +34,5 @@ p#titleScreenStartButtonText {
 
 table#titleScreenButtonsTable {
 	margin: auto;
+	border-spacing: 150px;
 }

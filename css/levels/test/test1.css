@@ -18,3 +18,8 @@ img#debugGridLevelImg {
 	height: 100%;
 	width: 100%;
 }
+
+img#playerCarImg {
+	width: 6.25%;
+	position: absolute;
+}

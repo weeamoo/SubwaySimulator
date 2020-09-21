@@ -30,3 +30,7 @@ p#titleScreenStartButtonText {
 	font-size: 50px;
 	margin: 0;
 }
+
+table#titleScreenButtonsTable {
+	margin: auto;
+}

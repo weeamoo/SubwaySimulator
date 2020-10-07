@@ -17,7 +17,7 @@ document.onkeydown = function(evt) {
 
 function togglePause () {
 
-    if !(onStartMenu) {
+    if (onStartMenu == false) {
         if (paused) {
             unPauseGame();
         } else {
@@ -28,7 +28,7 @@ function togglePause () {
 
 function pauseGame () {
     paused = true;
-    
+
 }
 
 function unPauseGame () {

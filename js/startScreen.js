@@ -1,7 +1,7 @@
 var onStartMenu = true;
 
 function startGame () {
-	document.getElementById("titleScreen").add("invis");
+	document.getElementById("titleScreen").classList.add("invis");
 	onStartMenu = false;
 	paused = false;
 }

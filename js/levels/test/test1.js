@@ -24,8 +24,10 @@ function getNearestRail (x, y) {
 
         		break;
     		default:
-        		alert("none");
-        		break;
+        		
+        		outY = 500;
+
+           	break;
 	}
 
 

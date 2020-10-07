@@ -1,4 +1,7 @@
 function exit () {
+
+	//does not fucking work will fix later
+
 	document.getElementById("pauseMenuH1").innerHTML = "c";
 	document.getElementById("title").innerHTML = "c";
 	sleep(200);
@@ -19,6 +22,8 @@ function exit () {
 	sleep(200);
 	document.getElementById("pauseMenuH1").innerHTML = "cya l8r";
 	document.getElementById("title").innerHTML = "cya l8r";
+
+	window.close();
 }
 
 function sleep(milliseconds) {

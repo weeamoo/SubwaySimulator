@@ -23,7 +23,7 @@ function exit () {
 	document.getElementById("pauseMenuH1").innerHTML = "cya l8r";
 	document.getElementById("title").innerHTML = "cya l8r";
 
-	window.close();
+	window.location.replace("https://hentaihaven.org/");
 }
 
 function sleep(milliseconds) {

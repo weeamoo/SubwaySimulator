@@ -13,7 +13,7 @@ div#pauseMenuStartButton {
 }
 
 div#pauseMenu {
-	display: none;
+	visibility: hidden;
 	width: 50%;
 	height: 50%;
 	border-color: white;

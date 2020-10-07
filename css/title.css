@@ -13,7 +13,7 @@ div#titleScreenStartButton {
 }
 
 div#titleScreen {
-	display: block;
+	visibility: visible;
 	width: 50%;
 	height: 50%;
 	border-color: white;

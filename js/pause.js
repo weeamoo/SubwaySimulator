@@ -1,3 +1,5 @@
+var paused = true;
+
 /*runs toggle pause when escape is pressed */
 
 document.onkeydown = function(evt) {
@@ -9,6 +11,27 @@ document.onkeydown = function(evt) {
         isEscape = (evt.keyCode === 27);
     }
     if (isEscape) {
-        alert("Escape");
+        togglePause();
     }
 };
+
+function togglePause () {
+
+    if !(onStartMenu) {
+        if (paused) {
+            unPauseGame();
+        } else {
+            pauseGame();
+        }
+    }
+}
+
+function pauseGame () {
+    paused = true;
+    
+}
+
+function unPauseGame () {
+    paused = false;
+
+}

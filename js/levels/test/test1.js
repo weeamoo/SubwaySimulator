@@ -8,17 +8,17 @@ function getNearestRail (x, y) {
 
 		/*x coord starts at zero */
 
-    		case (x < 900):
+    		case x < 900:
         		
     			outY = 500;
 
         		break;
-    		case (x < 1100):
+    		case x < 1100:
         		
     			outY = x + 500;
 
         		break;
-    		case (x < 1300):
+    		case x < 1300:
         		
     			outY = 700
 
@@ -26,7 +26,7 @@ function getNearestRail (x, y) {
     		default:
         		alert("none");
         		break;
-}
+	}
 
 
 	/* outputs y coord of nearest rail */

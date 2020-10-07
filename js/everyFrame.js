@@ -1,7 +1,3 @@
-//vars
-
-//no vars yet
-
 //runs every frame
 function everyFrame () {
 

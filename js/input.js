@@ -1,32 +1,71 @@
+//vars
+var up = false;
+var down = false;
+var left = false;
+var right = false;
+
+
+//sets var to true when key is pressed
 document.onkeydown = function(event) {
   switch (event.keyCode) {
     case 37:
-        alert('Left key pressed');
+        left = true;
       break;
     case 38:
-        alert('Up key pressed');
+        up = true;
       break;
     case 39:
-        alert('Right key pressed');
+        right = true;
       break;
     case 40:
-        alert('Down key pressed');
+        down = true;
       break;
     case 65:
-        alert('A key pressed');
+        left = true;
       break;
     case 87:
-        alert('W key pressed');
+        up = true;
       break;
     case 68:
-        alert('D key pressed');
+        right = true;
       break;
     case 83:
-        alert('S key pressed');
+        down = true;
       break;
-    default:
-        alert(event.keyCode);
-      break;
+//    outputs key code when uncommented
+//    default:
+//        alert(event.keyCode);
+//      break;
 
+    }
+};
+
+//sets var to false when key is released
+document.onkeyup = function(event) {
+  switch (event.keyCode) {
+    case 37:
+        left = false;
+      break;
+    case 38:
+        up = false;
+      break;
+    case 39:
+        right = false;
+      break;
+    case 40:
+        down = false;
+      break;
+    case 65:
+        left = false;
+      break;
+    case 87:
+        up = false;
+      break;
+    case 68:
+        right = false;
+      break;
+    case 83:
+        down = false;
+      break;
     }
 };

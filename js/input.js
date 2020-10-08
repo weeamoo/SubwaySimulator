@@ -12,6 +12,18 @@ document.onkeydown = function(event) {
     case 40:
         alert('Down key pressed');
       break;
+    case 65:
+        alert('A key pressed');
+      break;
+    case 87:
+        alert('W key pressed');
+      break;
+    case 68:
+        alert('D key pressed');
+      break;
+    case 83:
+        alert('S key pressed');
+      break;
     default:
         alert(event.keyCode);
       break;

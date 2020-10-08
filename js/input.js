@@ -4,6 +4,8 @@ var down = false;
 var left = false;
 var right = false;
 
+var viewKeycode = false;
+
 
 //sets var to true when key is pressed
 document.onkeydown = function(event) {
@@ -32,9 +34,11 @@ document.onkeydown = function(event) {
     case 83:
         down = true;
       break;
-//    outputs key code when uncommented
+//    outputs key code when viewKeycode is true
     default:
+      if (viewKeycode) { 
         alert(event.keyCode);
+      }
       break;
 
     }

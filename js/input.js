@@ -33,9 +33,9 @@ document.onkeydown = function(event) {
         down = true;
       break;
 //    outputs key code when uncommented
-//    default:
-//        alert(event.keyCode);
-//      break;
+    default:
+        alert(event.keyCode);
+      break;
 
     }
 };

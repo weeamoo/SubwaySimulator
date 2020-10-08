@@ -13,7 +13,7 @@ document.onkeydown = function(event) {
         alert('Down key pressed');
       break;
     default:
-        alert(evet.keyCode);
+        alert(event.keyCode);
       break;
 
     }

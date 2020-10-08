@@ -9,6 +9,18 @@ table#debugGridLevelTable {
 	width: 400%;
 }
 
+div#world {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+div#playerCarDiv {
+	position: absolute;
+	width: 6.25%;
+	height: 10%;
+}
+
 td#debugGridLevelTd {
 	padding: 0px;
 }
@@ -20,6 +32,6 @@ img#debugGridLevelImg {
 }
 
 img#playerCarImg {
-	width: 6.25%;
+	width: 100%;
 	position: absolute;
 }

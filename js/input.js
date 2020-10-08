@@ -34,6 +34,10 @@ document.onkeydown = function(event) {
     case 83:
         down = true;
       break;
+//    pause menu
+    case 27:
+        togglePause();
+      break;
 //    outputs key code when viewKeycode is true
     default:
       if (viewKeycode) { 

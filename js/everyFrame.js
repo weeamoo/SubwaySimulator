@@ -1,3 +1,8 @@
+//vars
+
+var x = 0;
+var y = 0;
+
 //runs every frame
 function everyFrame () {
 
@@ -20,7 +25,7 @@ function frameMovement () {
 }
 
 function frameSpeedEnv () {
-	
+
 }
 
 //inital call to function to start eveything up

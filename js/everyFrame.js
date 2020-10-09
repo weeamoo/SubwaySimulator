@@ -18,12 +18,13 @@ function everyFrame () {
 
 function keyActions () {
 
+	//for each directions sees if speed is far enough away from zero then calls accel function
 	if (left) {
-		if (Math.abs(speed)) {
+		if (Math.abs(speed) < kick) {
 			speed = 0 - kick;
 		}
 		speed = accel(speed, playerAccelPower, -1);
-	} else if (right) {
+	} else if (right < kick) {
 		if (Math.abs(speed)) {
 			speed = kick;
 		}

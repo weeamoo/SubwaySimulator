@@ -14,10 +14,10 @@ function everyFrame () {
 		frameMovement();
 
 		frameSpeedEnv();
-
-		//calls function after one frame has passed
-		requestAnimationFrame(everyFrame);
 	}
+
+	//calls function after one frame has passed
+	requestAnimationFrame(everyFrame);
 }
 
 function keyActions () {

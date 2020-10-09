@@ -1,3 +1,9 @@
+//no clue what thease comments are for or what I wanted to have be in this script, oh well that's probably becasue I didn't read them. LOLOLOLOLOLZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+//I'll read them l8r
+
+
+
 /* write code here to find screen size and save it to vars */
 
 /* make function here to call get nearest rail and  then have it decide weather to warp the subway up a bit to be on top of the rail or let it fall

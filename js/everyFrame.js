@@ -24,8 +24,8 @@ function keyActions () {
 			speed = 0 - kick;
 		}
 		speed = accel(speed, playerAccelPower, -1);
-	} else if (right < kick) {
-		if (Math.abs(speed)) {
+	} else if (right) {
+		if (Math.abs(speed) < kick) {
 			speed = kick;
 		}
 		speed = accel(speed, playerAccelPower, 1);

@@ -6,14 +6,18 @@ var y = 0;
 //runs every frame
 function everyFrame () {
 
-	keyActions();
+	//don't run the game if it's paused
+	if (paused == false) {
 
-	frameMovement();
+		keyActions();
 
-	frameSpeedEnv();
+		frameMovement();
 
-	//calls function after one frame has passed
-	requestAnimationFrame(everyFrame);
+		frameSpeedEnv();
+
+		//calls function after one frame has passed
+		requestAnimationFrame(everyFrame);
+	}
 }
 
 function keyActions () {

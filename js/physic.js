@@ -12,6 +12,10 @@ function accel (speedPass, directionPass, accelPowerPass) {
 
 	//will return new speed
 
-	return speedPass + (speedPass * accelPowerPass * directionPass);
+	if (xSpeed > 0) {
+		return speedPass + (speedPass * accelPowerPass * directionPass);
+	} else {
+		return speedPass + (speedPass * accelPowerPass * directionPass * -1);
+	}
 
 }

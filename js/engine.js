@@ -29,7 +29,7 @@ var ySpeed = 0;
 
 
 //acceleration power in percent of speed per frame
-var playerAccelPower = 0.001;
+var playerAccelPower = 0.1;
 
 //what minimum speed should be when key is held
-var kick = 0.001;
+var kick = 0.05;

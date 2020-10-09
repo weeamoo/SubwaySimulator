@@ -20,20 +20,29 @@ function keyActions () {
 
 	//for each directions sees if speed is far enough away from zero then calls accel function
 	if (left) {
-		if (Math.abs(speed) < kick) {
-			speed = 0 - kick;
+		if (Math.abs(xSpeed) < kick) {
+			xSpeed = 0 - kick;
 		}
-		speed = accel(speed, playerAccelPower, -1);
+		xSpeed = accel(xSpeed, playerAccelPower, -1);
 	} else if (right) {
-		if (Math.abs(speed) < kick) {
-			speed = kick;
+		if (Math.abs(xSpeed) < kick) {
+			xSpeed = kick;
 		}
-		speed = accel(speed, playerAccelPower, 1);
+		xSpeed = accel(xSpeed, playerAccelPower, 1);
 	}
 
 }
 
 function frameMovement () {
+
+	//sets y to where the rail is
+	y = getNearestRail(x, y);
+
+	//applies one frame of movement
+	x = x + xSpeed;
+
+	//moves sub to position
+	UpdateSubPos(x, y);
 
 }
 

@@ -21,7 +21,8 @@
 
 //rando vars
 
-var speed = 0;
+var xSpeed = 0;
+var ySpeed = 0;
 
 //putting some semicontstants here lol
 //semi constants, can be changed when buying upgrandes

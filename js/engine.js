@@ -18,3 +18,17 @@
 /* make function here to move car to specific coords on map in game units and translate them to whatever is needed for tha browser
 
 */
+
+//rando vars
+
+var speed = 0;
+
+//putting some semicontstants here lol
+//semi constants, can be changed when buying upgrandes
+
+
+//acceleration power in percent of speed per frame
+var playerAccelPower = 0.001;
+
+//what minimum speed should be when key is held
+var kick = 0.001;

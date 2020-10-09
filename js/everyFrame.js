@@ -18,6 +18,18 @@ function everyFrame () {
 
 function keyActions () {
 
+	if (left) {
+		if (Math.abs(speed)) {
+			speed = 0 - kick;
+		}
+		speed = accel(speed, playerAccelPower, -1);
+	} else if (right) {
+		if (Math.abs(speed)) {
+			speed = kick;
+		}
+		speed = accel(speed, playerAccelPower, 1);
+	}
+
 }
 
 function frameMovement () {

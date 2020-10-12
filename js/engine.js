@@ -23,7 +23,7 @@ function toggleNoClip () {
 
 }
 
-function toogleFreeCam () {
+function toggleFreeCam () {
 	if (freeCam) {
 		freeCam = false;
 		document.getElementById('body').classList.add("hideScroll");

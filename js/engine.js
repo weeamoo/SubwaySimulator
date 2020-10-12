@@ -19,8 +19,26 @@
 
 */
 
+function toggleNoClip () {
+
+}
+
+function toogleFreeCam () {
+	if (freeCam) {
+		freeCam = false;
+		document.getElementById('body').classList.add("hideScroll");
+		console.log("freecam off");
+	} else {
+		freeCam = true;
+		document.getElementById('body').classList.remove("hideScroll");
+		console.log("freecam on");
+	}
+}
+
 //rando vars
 
+var noClip = false;
+var freeCam - false;
 var xSpeed = 0;
 var ySpeed = 0;
 

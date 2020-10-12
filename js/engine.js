@@ -38,7 +38,7 @@ function toogleFreeCam () {
 //rando vars
 
 var noClip = false;
-var freeCam - false;
+var freeCam = false;
 var xSpeed = 0;
 var ySpeed = 0;
 

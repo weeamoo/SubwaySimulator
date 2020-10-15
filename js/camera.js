@@ -26,7 +26,7 @@ function updateCameraOffset () {
 		xOffset = x - xMin;
 	}
 
-	if (y < yMin) {
+	/* if (y < yMin) {
 		//smaller than min, camera all the way to the bottom
 		yOffset = 0;
 	} else if (y > yMax) {
@@ -35,5 +35,5 @@ function updateCameraOffset () {
 	} else {
 		//between min and max, calc offset
 		yOffset = y - yMin;
-	}
+	} */
 }

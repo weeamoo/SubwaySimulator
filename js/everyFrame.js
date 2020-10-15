@@ -52,8 +52,8 @@ function frameMovement () {
 	if (freeCam) {
 		updateSubPos(x, y);
 	} else {
-		updateSubPos(x + xOffset, y + yOffset);
-		updateBackPos(xOffset, yOffset);
+		updateSubPos(x - xOffset, y - yOffset);
+		updateBackPos(0 - xOffset, 0 - yOffset);
 	}
 
 }

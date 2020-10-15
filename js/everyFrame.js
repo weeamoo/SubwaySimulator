@@ -48,8 +48,13 @@ function frameMovement () {
 	//calcs new camera pos
 	updateCameraOffset();
 
-	//moves sub to position
-	UpdateSubPos(x, y);
+	//moves sub to position & moves camera if freecam is off
+	if (freeCam) {
+		updateSubPos(x, y);
+	} else {
+		updateSubPos(x + xOffset, y + yOffset);
+		updateBackPos(x + xOffset, y + yOffset);
+	}
 
 }
 

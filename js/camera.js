@@ -20,7 +20,7 @@ function updateCameraOffset () {
 		xOffset = 0;
 	} else if (x > xMax) {
 		//larger than max, camera all the way to the right
-		xOffset = levelWidth;
+		xOffset = xMax;
 	} else {
 		//between min and max, calc offset
 		xOffset = x - xMin;

@@ -45,6 +45,9 @@ function frameMovement () {
 	//applies one frame of movement
 	x = x + xSpeed;
 
+	//calcs new camera pos
+	updateCameraOffset();
+
 	//moves sub to position
 	UpdateSubPos(x, y);
 

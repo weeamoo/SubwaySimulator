@@ -41,3 +41,5 @@ function getNearestRail (x, y) {
 	return outY;
 }
 
+//calls for bounds to be calced after loading level
+calcBounds();

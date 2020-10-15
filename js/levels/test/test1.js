@@ -1,3 +1,9 @@
+//level data values
+
+//values in game units
+var levelWidth = 4800;
+var levelHeight = 900;
+
 /* this function is essentially the geometry sliced by the if or switch statement */
 
 function getNearestRail (x, y) {
@@ -32,6 +38,6 @@ function getNearestRail (x, y) {
 
 
 	/* outputs y coord of nearest rail */
-	return outY
+	return outY;
 }
 

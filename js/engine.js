@@ -51,3 +51,9 @@ var playerAccelPower = 0.1;
 
 //what minimum speed should be when key is held
 var kick = 0.05;
+
+//when the car will stop completely while brakes are held
+var brakesFullStop = 0.05;
+
+//brakes power
+var palyerBrakePower = 0.1;

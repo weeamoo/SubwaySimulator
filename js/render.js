@@ -20,3 +20,14 @@ function updateBackPos (xPass, yPass) {
 	document.getElementById("world").style.left = xPass + "%";
 	document.getElementById("world").style.bottom = yPass + "%"
 }
+
+//universial function that can move other stuff
+function updatePos (elementID, xPass, yPass) {
+
+// translates game units to percent of screen
+	xPass = xPass / 16;
+	yPass = yPass / 9;
+
+	document.getElementById(elementID).style.left = xPass + "%";
+	document.getElementById(elementID).style.bottom = yPass + "%"
+}

@@ -62,9 +62,7 @@ function frameSpeedEnv () {
 	if (brakes) {
 		if (Math.abs(xSpeed) < brakesFullStop) {
 			xSpeed = 0;
-		}
-	} else {
-		if (xSpeed > 0) {
+		} else if (xSpeed > 0) {
 			xSpeed = brake(palyerBrakePower, 1, palyerBrakePower);
 		} else {
 			xSpeed = brake(palyerBrakePower, -1, palyerBrakePower);

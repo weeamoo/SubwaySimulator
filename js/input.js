@@ -6,36 +6,50 @@ var right = false;
 
 var viewKeycode = false;
 
+//default binds
+var left1 = 37;
+var left2 = 65;
+var left3 = "UNBOUND";
+var right1 = 39;
+var right2 = 68;
+var right3 = "UNBOUND";
+var up1 = 38;
+var up2 = 87;
+var up3 = "UNBOUND";
+var down1 = 40;
+var down2 = 83;
+var down3 = "UNBOUND";
+var pause1 = 27;
+var pause2 = "UNBOUND";
+var pause3 = "UNBOUND";
 
 //sets var to true when key is pressed
 document.onkeydown = function(event) {
   switch (event.keyCode) {
-    case 37:
+    case left1:
+    case left2:
+    case left3:
         left = true;
       break;
-    case 38:
-        up = true;
-      break;
-    case 39:
+    case right1:
+    case right2:
+    case right3:
         right = true;
       break;
-    case 40:
-        down = true;
-      break;
-    case 65:
-        left = true;
-      break;
-    case 87:
+    case up1:
+    case up2:
+    case up3:
         up = true;
       break;
-    case 68:
-        right = true;
-      break;
-    case 83:
+    case down1:
+    case down2:
+    case down3:
         down = true;
       break;
 //    pause menu
-    case 27:
+    case pause1:
+    case pause2:
+    case pause3:
         togglePause();
       break;
 //    outputs key code when viewKeycode is true
@@ -51,28 +65,24 @@ document.onkeydown = function(event) {
 //sets var to false when key is released
 document.onkeyup = function(event) {
   switch (event.keyCode) {
-    case 37:
+    case left1:
+    case left2:
+    case left3:
         left = false;
       break;
-    case 38:
-        up = false;
-      break;
-    case 39:
+    case right1:
+    case right2:
+    case right3:
         right = false;
       break;
-    case 40:
-        down = false;
-      break;
-    case 65:
-        left = false;
-      break;
-    case 87:
+    case up1:
+    case up2:
+    case up3:
         up = false;
       break;
-    case 68:
-        right = false;
-      break;
-    case 83:
+    case down1:
+    case down2:
+    case down3:
         down = false;
       break;
     }

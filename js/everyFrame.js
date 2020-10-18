@@ -64,7 +64,7 @@ function frameSpeedEnv () {
 			xSpeed = 0;
 		}
 	} else {
-		if (xSpeed > 1) {
+		if (xSpeed > 0) {
 			xSpeed = brake(palyerBrakePower, 1, palyerBrakePower);
 		} else {
 			xSpeed = brake(palyerBrakePower, -1, palyerBrakePower);

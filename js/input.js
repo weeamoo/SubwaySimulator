@@ -3,6 +3,7 @@ var up = false;
 var down = false;
 var left = false;
 var right = false;
+var brakes = false;
 
 var viewKeycode = false;
 
@@ -19,6 +20,9 @@ var up3 = "UNBOUND";
 var down1 = 40;
 var down2 = 83;
 var down3 = "UNBOUND";
+var brakes1 = 16;
+var brakes2 = "UNBOUND";
+var brakes3 = "UNBOUND";
 var pause1 = 27;
 var pause2 = "UNBOUND";
 var pause3 = "UNBOUND";
@@ -45,6 +49,11 @@ document.onkeydown = function(event) {
     case down2:
     case down3:
         down = true;
+      break;
+    case brakes1:
+    case brakes2:
+    case brakes3:
+        brakes = true;
       break;
 //    pause menu
     case pause1:
@@ -84,6 +93,11 @@ document.onkeyup = function(event) {
     case down2:
     case down3:
         down = false;
+      break;
+    case brakes1:
+    case brakes2:
+    case brakes3:
+        brakes = false;
       break;
     }
 };

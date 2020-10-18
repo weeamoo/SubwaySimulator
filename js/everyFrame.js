@@ -27,12 +27,12 @@ function keyActions () {
 		if (Math.abs(xSpeed) < kick) {
 			xSpeed = 0 - kick;
 		}
-		xSpeed = accel(xSpeed, playerAccelPower, -1);
+		xSpeed = accel(xSpeed, -1, playerAccelPower);
 	} else if (right) {
 		if (Math.abs(xSpeed) < kick) {
 			xSpeed = kick;
 		}
-		xSpeed = accel(xSpeed, playerAccelPower, 1);
+		xSpeed = accel(xSpeed, 1, playerAccelPower);
 	}
 
 }
@@ -59,7 +59,17 @@ function frameMovement () {
 }
 
 function frameSpeedEnv () {
-
+	if (brakes) {
+		if (Math.abs(xSpeed) < brakesFullStop) {
+			xSpeed = 0;
+		}
+	} else {
+		if (xSpeed > 1) {
+			xSpeed = brake(palyerBrakePower, 1, palyerBrakePower);
+		} else {
+			xSpeed = brake(palyerBrakePower, -1, palyerBrakePower);
+		}
+	}
 }
 
 //inital call to function to start eveything up

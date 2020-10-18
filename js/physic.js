@@ -22,8 +22,8 @@ function accel (speedPass, directionPass, accelPowerPass) {
 
 function brake (speedPass, directionPass, breakPowerPass) {
 	if (speedPass > 0) {
-		return speedPass + (speedPass * accelPowerPass * directionPass * -1);
+		return speedPass + (speedPass * breakPowerPass * directionPass * -1);
 	} else {
-		return speedPass + (speedPass * accelPowerPass * directionPass);
+		return speedPass + (speedPass * breakPowerPass * directionPass);
 	}
 }

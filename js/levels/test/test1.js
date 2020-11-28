@@ -21,12 +21,12 @@ function getNearestRail (x, y) {
         		break;
     		case (x < 1100):
         		
-    			outY = x + 500;
+    			outY = 500;
 
         		break;
     		case (x < 1300):
         		
-    			outY = 700
+    			outY = 500
 
         		break;
     		default:

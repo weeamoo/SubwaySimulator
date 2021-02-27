@@ -1,0 +1,61 @@
+/*main binding menu div */
+div#controlBindingsMenu {
+	width: 50%;
+	height: 95%;
+	border-color: white;
+	border-style: solid;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #000;
+}
+
+/*window title */
+h1#controlBindingsMenuH1 {
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+}
+
+/* close button */
+h1#controlBindingsMenuCloseButton {
+	color: #FFF;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	border-style: solid;
+}
+
+/* table that contains last press output */
+table#lastKeyPressTable {
+	margin: auto;
+}
+
+/*applies to all h1 in last press output table */
+h1.lastKeyPressTableCell {
+	color: #fff;
+}
+
+/* shit way to add space between two outputs on last press display table */
+h1#lastKeyPressTableH1KeyName {
+	margin-right: 40px;
+}
+
+/* control binding menu table */
+table#controlBindingsTable {
+	margin: auto;
+}
+
+/* control binding table headings */
+h1.controlBindingsTableHeaderCell {
+	color: #fff;
+}
+
+/* control binding table cells */
+h1.controlBindingsTableCell {
+	color: #fff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

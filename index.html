@@ -24,11 +24,15 @@
 		
 		<link rel="stylesheet" type="text/css" href="/css/pause.css">
 		
+		<link rel="stylesheet" type="text/css" href="/css/hud.css">
+		
 		<link rel="stylesheet" type="text/css" href="/css/classes.css">
+		
+		<link rel="stylesheet" type="text/css" href="/css/bindingMenu.css">
 		
 		<link rel="stylesheet" type="text/css" href="/css/noAntiAliasing.css">
 		
-		<link id="lvlLoaderCSS" rel="stylesheet" type="text/css" href="/css/levels/test/test1.css">
+		<link id="lvlLoaderCSS" rel="stylesheet" type="text/css" href="/levels/debug/test1/css/test1.css">
 
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
@@ -38,7 +42,7 @@
 
 		<script src="/js/camera.js"></script>
 
-		<script src="/js/util.js"></script>
+		<script src="/js/levelChange.js"></script>
 
 		<script src="/js/pause.js"></script>
 
@@ -50,3533 +54,143 @@
 
 		<script src="/js/physic.js"></script>
 
-		<script id="lvlLoader" src="/js/levels/test/test1.js" type="text/javascript"></script>
-
-		<meta name="description" content="Subway simulator, fuk te rest" >
+		<meta name="description" content="Subway simulator <- Best Game" >
 
 		<script src="/js/everyFrame.js"></script>
+
+		<script src="/levels/debug/caramelldansen/js/caramelldansen.js"></script>
+
+		<script src="/levels/debug/miku/js/miku.js"></script>
+
+		<script src="/levels/debug/test1/js/test1.js"></script>
+
+		<script src="/levels/debug/test2/js/test2.js"></script>
+
+		<script src="/levels/debug/test3/js/test3.js"></script>
+
+		<script src="/levels/debug/test4/js/test4.js"></script>
 		
 	</head>
 
 	<body id="body" class="hideScroll" >
 
-		<div id="world" >
+		<div id="worldBg5" >
+			
+		</div>
 
-			<table id="debugGridLevelTable" cellspacing="0" >
-				
-				<tbody id="debugGridLevelTbody">
+		<div id="worldBg4" >
+			
+		</div>
 
-					<tr id="debugGridLevelTr" >
+		<div id="worldBg3" >
+			
+		</div>
 
-						<td id="debugGridLevelTd" >
+		<div id="worldBg2" >
+			
+		</div>
 
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
+		<div id="worldBg1" >
+			
+		</div>
+
+		<div id="playerCarDiv" style="left: 45%;bottom: 75%" >
+
+			<img id="playerCarBodyImg" class="playerCarImg" src="/img/player/car.png" />
+
+			<img id="playerCarDoorImg" class="playerCarImg" src="/img/player/door.png" />
+							
+		</div>
+
+		<div id="worldFg1" >
+			
+		</div>
+
+		<div id="worldFg2" >
+			
+		</div>
+
+		<div id="worldFg3" >
+			
+		</div>
+
+		<div id="worldFg4" >
+			
+		</div>
+
+		<div id="worldFg5" >
+			
+		</div>
+		
+		<div id="hud" class="invis" >
+
+			<table id="hudTable" >
+
+				<tbody>
+
+					<tr>
+
+						<td>
+
+							<h1 id="hudSpeedLimitLabel" class="hudH1Label" >Speed Limit:</h1>
 							
 						</td>
 
-						<td id="debugGridLevelTd" >
+						<td>
 
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
+							<h1 id="hudSpeedLimitDisplay" class="hudH1Display" >69420 MPH</h1>
 							
 						</td>
 
-						<td id="debugGridLevelTd" >
+						<td>
 
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
+							<h1 id="hudSwitchLabel" class="hudH1Label" >Next Switch:</h1>
 							
 						</td>
 
-						<td id="debugGridLevelTd" >
+						<td>
 
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
+							<h1 id="hudSwitchDisplay" class="hudH1Display" >UP</h1>
 							
 						</td>
 
 					</tr>
 
-					<tr id="debugGridLevelTr" >
+					<tr>
 
-						<td id="debugGridLevelTd" >
+						<td>
 
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
+							<h1 id="hudSpeed=Label" class="hudH1Label" >Your Speed:</h1>
 							
 						</td>
 
-						<td id="debugGridLevelTd" >
+						<td>
 
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
+							<h1 id="hudSpeedDisplay" class="hudH1Display" >69420 MPH</h1>
 							
 						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
+						
 					</tr>
-
-					<tr id="debugGridLevelTr" >
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-					</tr>
-
-					<tr id="debugGridLevelTr" >
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-					</tr>
-
-					<tr id="debugGridLevelTr" >
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-					</tr>
-
-					<tr id="debugGridLevelTr" >
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-					</tr>
-
-					<tr id="debugGridLevelTr" >
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-					</tr>
-
-					<tr id="debugGridLevelTr" >
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-					</tr>
-
-					<tr id="debugGridLevelTr" >
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-						<td id="debugGridLevelTd" >
-
-							<img id="debugGridLevelImg" src="/img/levels/test1/bedrock.png" />
-							
-						</td>
-
-					</tr>
-
+					
 				</tbody>
-
-			</table>
-		
-		</div>
-
-		<div id="playerCarDiv" >
 				
-				<img id="playerCarImg" src="/img/player/car.png" />
+			</table>
 
+			<iframe id="hudVideo" class="invis" width="15%" height="15%" src="https://subsim.moe/about" frameborder="0" allowfullscreen></iframe>
+		
 		</div>
-		
-		<div id="hud" >
-		
+
+		<div id="worldSFg1" >
+			
 		</div>
 		
 		<div id="titleScreen" >
+
+			<a onclick="document.getElementById('titleScreenImgLogo').src = '/img/gui/titleScreen/logo/trans.png';" >
 			
-			<h1 id="titleScreenH1" >SUBWAY SIMULATOR 2020</h1>
+				<img id="titleScreenImgLogo" src="/img/gui/titleScreen/logo/norm.png" />
+
+			</a>
 
 			<table id="titleScreenButtonsTable" >
 
@@ -3590,7 +204,7 @@
 				
 								<div id="titleScreenStartButton" >
 							       
-									<p id="titleScreenStartButtonText" >Start</p>
+									<img id="titleScreenImgStartButton" src="/img/gui/titleScreen/start/norm.png" />
 	
 								</div>
 				
@@ -3598,13 +212,13 @@
 
 						</td>
 						
-						<td  id="titleScreenButtonsTable" >
+						<td id="titleScreenButtonsTable" >
 
-							<a onclick='alert("Not Ready");' >
+							<a onclick='showBindMenu();' >
 				
 								<div id="titleScreenStartButton" >
 							       
-									<p id="titleScreenStartButtonText" >Controls</p>
+									<img id="titleScreenImgControlsButton" src="/img/gui/titleScreen/controls/norm.png" />
 	
 								</div>
 
@@ -3612,9 +226,9 @@
 
 						</td>
 						
-						<td  id="titleScreenButtonsTable" >
+						<td  id="titleScreenButtonsTable" class="invis" >
 			
-							<a onclick='alert("Not Ready");' >
+							<a onclick='alert("wtf is a demo?");' >
 				
 								<div id="titleScreenStartButton" >
 							       
@@ -3627,10 +241,22 @@
 						</td>
 
 					</tr>
+
+					<tr id="titleScreenButtonsTable" >
+
+						<h1 id="titleScreenH1" >Please play in fullscreen mode</h1>
+
+					</tr>
 					
 				</tbody>
 				
 			</table>
+
+			<a onclick="addMikuToTitle()" >
+
+				<p id="titleScreenVersionNumber" >Pre-Alpha 0.69.420</p>
+
+			</a>
 			
 		</div>
 		
@@ -3650,7 +276,7 @@
 				
 								<div id="pauseMenuStartButton" >
 							       
-									<p id="titleScreenStartButtonText" >MORE ACTION</p>
+									<p id="titleScreenStartButtonText" >Resume</p>
 	
 								</div>
 				
@@ -3660,7 +286,7 @@
 						
 						<td  id="pauseMenuButtonsTable" >
 
-							<a onclick='alert("Not Ready");' >
+							<a onclick='showBindMenu();' >
 				
 								<div id="pauseMenuStartButton" >
 							       
@@ -3694,8 +320,182 @@
 			
 		</div>
 
+		<div id="controlBindingsMenu"  class="invis" >
+			
+			<h1 id="controlBindingsMenuH1" >Edit Control Bindings</h1>
+
+			<a onclick="unShowBindMenu();">
+			
+				<h1 id="controlBindingsMenuCloseButton" >X</h1>
+
+			</a>
+
+			<table id="lastKeyPressTable" >
+
+				<tbody>
+
+					<tr>
+
+						<td>
+
+							<h1 id="lastKeyPressTableH1Label" class="lastKeyPressTableCell" >Last Key Pressed:</h1>
+							
+						</td>
+
+						<td>
+
+							<h1 id="lastKeyPressTableH1KeyName" class="lastKeyPressTableCell" >FUCK</h1>
+							
+						</td>
+
+						<td>
+
+							<h1 id="lastKeyPressTableH1Label" class="lastKeyPressTableCell" >JS Keycode:</h1>
+							
+						</td>
+
+						<td>
+
+							<h1 id="lastKeyPressTableH1KeyCode" class="lastKeyPressTableCell" >Script isn't working</h1>
+							
+						</td>
+
+					</tr>
+					
+				</tbody>
+				
+			</table>
+
+			<h1 id="controlBindingsMenuH1" >Click a bind to apply this key to it</h1>
+			
+			<table id="controlBindingsTable" >
+
+				<tbody>
+					
+					<tr>
+
+						<td>
+							
+							<h1 id="controlBindingsTableH1" class="controlBindingsTableHeaderCell" >Control</h1>
+
+						</td>
+
+						<td>
+
+							<h1 id="controlBindingsTableH1" class="controlBindingsTableHeaderCell" >Bind 1</h1>
+
+						</td>
+
+						<td>
+
+							<h1 id="controlBindingsTableH1" class="controlBindingsTableHeaderCell" >Bind 2</h1>
+
+						</td>
+
+						<td>
+
+							<h1 id="controlBindingsTableH1" class="controlBindingsTableHeaderCell" >Bind 3</h1>
+
+						</td>
+						
+					</tr>
+					
+					<tr>
+
+						<td>
+							
+							<h1 id="controlBindingsTableH1TestLabel" class="controlBindingsTableCell" >Control</h1>
+
+						</td>
+
+						<td>
+
+							<a onclick='bind(lastKey, "input.test.a");'>
+
+								<h1 id="controlBindingsTableH1TestA" class="controlBindingsTableCell" >Bind 1</h1>
+
+							</a>
+
+						</td>
+
+						<td>
+
+							<a onclick='bind(lastKey, "input.test.b");'>
+
+								<h1 id="controlBindingsTableH1TestB" class="controlBindingsTableCell" >Bind 2</h1>
+
+							</a>
+
+						</td>
+
+						<td>
+
+							<a onclick='bind(lastKey, "input.test.c");'>
+
+								<h1 id="controlBindingsTableH1TestC" class="controlBindingsTableCell" >Bind 3</h1>
+
+							</a>
+
+						</td>
+						
+					</tr>
+
+				</tbody>
+				
+			</table>
+
+		</div>
+
+		<div id="wantedStarsDiv" class="invis" >
+
+			<table id="wantedStarsTable" >
+
+				<tbody>
+
+					<tr>
+
+						<td>
+
+							<img id="wantedStar5" class="wantedStar" src="/img/gui/police/wanted/emptyStar.png" />
+							
+						</td>
+
+						<td>
+
+							<img id="wantedStar4" class="wantedStar" src="/img/gui/police/wanted/emptyStar.png" />
+							
+						</td>
+
+						<td>
+
+							<img id="wantedStar3" class="wantedStar" src="/img/gui/police/wanted/emptyStar.png" />
+							
+						</td>
+
+						<td>
+
+							<img id="wantedStar2" class="wantedStar" src="/img/gui/police/wanted/emptyStar.png" />
+							
+						</td>
+
+						<td>
+
+							<img id="wantedStar1" class="wantedStar" src="/img/gui/police/wanted/emptyStar.png" />
+							
+						</td>
+						
+					</tr>
+					
+				</tbody>
+
+			</table>
+
+		</div>
+
 	</body>
 
+	<script src="/js/controlBindings.js"></script>
+	
 	<script src="/js/input.js"></script>
 
 </html>

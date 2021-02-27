@@ -1,3 +1,4 @@
-# SubwaySimulator
+# SubwaySimulatorBeta
+Beta version of subway simulator
 
-SUBWAY SIMULATOR 2020
+1 meter = 25 game units

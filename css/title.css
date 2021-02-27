@@ -1,7 +1,7 @@
 h1#titleScreenH1 {
 	color: #fff;
-	font-style: italic;
 	text-align: center;
+	margin-top: 25%;
 }
 
 div#titleScreenStartButton {
@@ -23,6 +23,8 @@ div#titleScreen {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background-color: rgba(0, 0, 0, 0.8);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 p#titleScreenStartButtonText {
@@ -32,7 +34,40 @@ p#titleScreenStartButtonText {
 	margin: 0;
 }
 
+/* table that holds title screen buttons */
 table#titleScreenButtonsTable {
 	margin: auto;
-	border-spacing: 150px;
+	border-spacing: 20px;
+	top: 15%;
+	position: absolute;
+	width: 50%;
+	left: 25%;
+}
+
+/* title */
+img#titleScreenImgLogo {
+	width: 40%;
+	left: 30%;
+	position: absolute;
+	top: 5%;
+}
+
+/* start button */
+img#titleScreenImgStartButton {
+	width: 50%;
+}
+
+/* controls button */
+img#titleScreenImgControlsButton {
+	width: 75%;
+}
+
+/* version number */
+p#titleScreenVersionNumber {
+	position: absolute;
+	bottom: 2%;
+	right: 1%;
+	color: #fff;
+	margin: 0px;
+	font-size: 250%;
 }

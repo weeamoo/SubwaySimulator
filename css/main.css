@@ -13,3 +13,28 @@ body#body {
 h1#titleText {
 	color: #fff;
 }
+
+/* world container Div */
+div#worldBg1, div#worldBg2, div#worldBg3, div#worldBg4, div#worldBg5, div#worldFg1, div#worldFg2, div#worldFg3, div#worldFg4, div#worldFg5, div#worldSFg1 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+/*player subway car */
+div#playerCarDiv {
+	position: absolute;
+	width: 6.25%;
+	height: 10%;
+}
+
+img.playerCarImg {
+	width: 100%;
+	position: absolute;
+}
+
+/*wanted stars */
+div#wantedStarsDiv {
+	right: 0px;
+	position: absolute;
+}
